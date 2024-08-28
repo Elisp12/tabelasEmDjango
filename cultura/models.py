@@ -12,6 +12,8 @@ class Tb_armazem(models.Model):
     index = models.AutoField(primary_key=True)
     nome = models.CharField(max_length=50)
     tipo = models.CharField(max_length=100)
+    old_nome = models.CharField(max_length=50)
+    old_tipo = models.CharField(max_length=100)
 
     def __str__(self):
         return self.nome
