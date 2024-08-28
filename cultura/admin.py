@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from cultura.models import Tb_culturas, Tb_armazem
+
+admin.site.register(Tb_culturas)
+
+admin.site.register(Tb_armazem)
